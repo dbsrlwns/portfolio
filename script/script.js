@@ -53,11 +53,25 @@ $(function (){
     $(window).scroll(function(){
         var wScroll = $(this).scrollTop();
         // console.log(wScroll);
-        var section2 = $("#section2").offset().top - 400;
-        console.log(section2);
+        var s2 = $("#section2").offset().top - 400;
+        var s3 = $("#section3").offset().top - 400;
+        var s4 = $("#section4").offset().top - 400;
+        var s5 = $("#section5").offset().top - 400;
 
-        if(wScroll > section2){
-
+        // 각 section 애니메이션 구현
+        if(wScroll > s2){
+            $("#section2 > .inner").animate({"left":'0'},1000);
+        }
+        if(wScroll > s3){
+            $(".skill_box > div").addClass("active");
+            $("#section3 > .inner").animate({"opacity":"1"});
+        }
+        if(wScroll > s4){
+            $(".itemBox").addClass("active");
+            $(".product .itemBox").stop().animate({"opacity":"0"});
+        }
+        if(wScroll > s5){
+            $("#section5 > .inner").animate({"left":'0'},1000);
         }
         // for(var i=0;i<6;i++){
         //     if( wScroll >= cont.eq(i).offset().top ){
