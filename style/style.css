@@ -317,7 +317,7 @@
     /* display: block;
     width: 20px;
     height: 20px; */
-    background: url(../images/—Pngtree—white\ shining\ light_6019805.png) no-repeat;
+    background: url(../images/star.png) no-repeat;
     background-size: cover;
 }
 #section1 .starBox span:nth-child(1) { animation: bling 2s 0.3s infinite backwards; }
@@ -380,7 +380,7 @@
 .about_left .profile_img div{ 
     width: 100%;
     height: 100%;
-    background: url(../images/윤기준.jpg) no-repeat center;
+    background: url(../images/YoonGiJun.jpg) no-repeat center;
     background-size: contain;
 }
 .about_left .profile_text p { line-height: 30px; }
